@@ -1,631 +1,319 @@
-# Power BI Dashboard — Sales & Order Analytics
+# Power BI Sales & Order Analytics Dashboard
 
-  
+<p align="center"> <img src="Screenshots/Dashboard.png" alt="Power BI Sales & Order Analytics Dashboard"> </p>
 
-![Sales & Order Analytics Dashboard](Screenshots/Dashboard.png)
+<p align="center"> <strong>Interactive Business Intelligence Dashboard for Sales, Profitability & Order Performance</strong> </p>
 
-  
-
-<p align="center">
-
-  <strong>Interactive Business Intelligence Dashboard for Global Sales & Order Performance</strong>
-
-</p>
-
-  
-
-<p align="center">
-
-  <img src="https://img.shields.io/badge/Power%20BI-Analytics-yellow" alt="Power BI">
-
-  <img src="https://img.shields.io/badge/DAX-Measures-blue" alt="DAX">
-
-  <img src="https://img.shields.io/badge/Power%20Query-ETL-green" alt="Power Query">
-
-  <img src="https://img.shields.io/badge/Excel-Dataset-brightgreen" alt="Excel">
-
-</p>
-
-  
+<p align="center"> <img src="[https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black](https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)" alt="Power BI"> <img src="[https://img.shields.io/badge/DAX-512BD4?style=for-the-badge&logoColor=white](https://img.shields.io/badge/DAX-512BD4?style=for-the-badge&logoColor=white)" alt="DAX"> <img src="[https://img.shields.io/badge/Power%20Query-117865?style=for-the-badge&logoColor=white](https://img.shields.io/badge/Power%20Query-117865?style=for-the-badge&logoColor=white)" alt="Power Query"> <img src="[https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)" alt="Excel"> </p>
 
 ---
 
-  
+## 📌 Project Overview
 
-## 📌 Overview
+**Power BI Sales & Order Analytics** is an interactive Business Intelligence dashboard developed to transform transactional sales data into actionable business insights.
 
-  
+The solution provides a consolidated view of **sales, profitability, orders, customers, products, geography, segments, shipping modes, and time-based performance** through interactive visualizations and dynamic filtering.
 
-**Sales & Order Analytics** is an interactive Microsoft Power BI dashboard developed to analyze global sales, profitability, order activity, customer behavior, product performance, and shipping operations.
+The project covers the complete BI development lifecycle:
 
-  
-
-The project demonstrates an end-to-end **Business Intelligence workflow**, starting with raw Excel data and progressing through data preparation, modeling, DAX-based metric development, visualization, and business analysis.
-
-  
-
-The dashboard is designed to transform raw transactional data into an interactive reporting environment that enables users to explore business performance across multiple dimensions.
-
-  
+**Data → Transformation → Modeling → DAX → Visualization → Analysis**
 
 ---
 
-  
+## 🎯 Business Objectives
 
-## 🎯 Objectives
+The dashboard was developed to provide visibility into key areas of business performance:
 
-  
-
-The primary objectives of this project are to:
-
-  
-
-- Analyze overall sales and profitability
-
-- Monitor order volume and quantity
-
-- Evaluate regional and country-level performance
-
-- Analyze product category and sub-category performance
-
-- Understand customer and segment behavior
-
-- Analyze shipping modes
-
-- Identify time-based sales and profit trends
-
-- Provide interactive KPI-driven reporting
-
-- Enable granular analysis through dynamic filtering and drill-downs
-
-  
+- Monitor overall sales and profitability
+    
+- Track order volume and quantity
+    
+- Analyze regional and country-level performance
+    
+- Identify product and sub-category trends
+    
+- Evaluate customer segment performance
+    
+- Analyze shipping mode distribution
+    
+- Identify sales and profit trends over time
+    
+- Enable interactive exploration through filters and drill-downs
+    
 
 ---
 
-  
+## 📊 Dashboard
 
-## 🗂️ Dataset
+The dashboard combines KPI cards, charts, slicers, and drill-down functionality to provide an interactive analytical experience.
+### Key Analytical Dimensions
 
-  
+| Dimension     | Analysis                |
+| ------------- | ----------------------- |
+| 🌍 Geography  | Region & Country        |
+| 📦 Products   | Category & Sub-Category |
+| 👥 Customers  | Customer & Segment      |
+| 🚚 Operations | Shipping Mode           |
+| 📅 Time       | Date & Trends           |
+| 💰 Finance    | Sales, Cost & Profit    |
 
-The project uses an Excel dataset containing transactional business information.
+---
 
-  
+## 📈 Key Performance Indicators
 
-### Key Fields
+The dashboard incorporates custom DAX measures for core business KPIs.
 
-  
-
-| Field | Description |
-
+|KPI|Purpose|
 |---|---|
+|**Total Sales**|Measures overall revenue generated|
+|**Total Profit**|Measures total profitability|
+|**Profit Margin**|Evaluates profit relative to sales|
+|**Order Volume**|Measures unique order activity|
+|**Average Sales per Order**|Measures average sales value per order|
+|**Total Quantity**|Measures total units ordered|
 
-| **Order ID** | Identifier for an order |
+Detailed DAX calculations are available in:
 
-| **Date** | Order/transaction date |
-
-| **Customer** | Customer associated with the order |
-
-| **Product Category** | Product category |
-
-| **Region** | Geographic region |
-
-| **Segment** | Customer/business segment |
-
-| **Shipping Mode** | Shipping method |
-
-| **Cost** | Cost associated with the order |
-
-| **Sales** | Sales amount |
-
-| **Profit** | Profit generated |
-
-| **Quantity** | Quantity ordered |
-
-  
-
-![Dataset Preview](Screenshots/Dataset.png)
-
-  
+📄 **[DAX Measures](https://chatgpt.com/c/Documentation/DAX_Measures.md)**
 
 ---
 
-  
+## 🔄 Data Preparation & ETL
 
-## 🔄 Data Preparation
+The source dataset was provided in Microsoft Excel and prepared using **Power Query**.
 
-  
-
-The raw Excel dataset was processed using **Power Query** before being used for dashboard development.
-
-  
-
-### Data preparation included:
-
-  
-
-- Cleaning and transforming raw data
-
-- Validating and assigning appropriate data types
-
-- Structuring the dataset for analysis
-
-- Preparing fields for reporting
-
-- Maintaining data integrity
-
-- Building a model optimized for interactive analysis
-
-  
-
-### Workflow
-
-  
+### Transformation Process
 
 ```text
-
-Raw Excel Dataset
-
-        ↓
-
-Power Query
-
-        ↓
-
-Data Cleaning & Transformation
-
-        ↓
-
-Data Modeling
-
-        ↓
-
-DAX Measures
-
-        ↓
-
-Dashboard Development
-
-        ↓
-
-Business Analysis
-
+                ┌─────────────────────┐
+                │   Excel Dataset     │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    Power Query      │
+                │ Cleaning & ETL      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │    Data Model       │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   DAX Measures      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Power BI Dashboard  │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Business Analysis   │
+                └─────────────────────┘
 ```
 
-  
+### Data Preparation Activities
+
+- Data cleaning and transformation
+    
+- Data type validation
+    
+- Dataset structuring
+    
+- Field preparation
+    
+- Data integrity checks
+    
+- Preparation for analytical modeling
+    
 
 ---
 
-  
+## 🧩 Data Model
 
-## 🧩 Data Modeling
-
-  
-
-A structured Power BI data model was developed to support interactive analysis and filtering.
-
-  
-
-The dashboard enables analysis across multiple business dimensions:
-
-  
+The analytical model supports multiple dimensions for interactive reporting.
 
 ```text
+                    SALES & ORDERS
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+        ▼                ▼                ▼
+   Geography         Products         Customers
+        │                │                │
+   ┌────┴────┐      ┌────┴────┐      └── Segment
+   │         │      │         │
+ Region   Country Category  Sub-Category
+        │
+        ▼
+      Time
+        │
+       Date
 
-Geography
-
-├── Region
-
-└── Country
-
-  
-
-Products
-
-├── Category
-
-└── Sub-Category
-
-  
-
-Customers
-
-└── Segment
-
-  
-
-Operations
-
-└── Shipping Mode
-
-  
-
-Time
-
-└── Date
-
+        │
+        ▼
+    Operations
+        │
+   Shipping Mode
 ```
 
-  
+For detailed model documentation:
 
-The model was designed to support reusable DAX measures, dynamic filtering, drill-down analysis, and time-based reporting.
-
-  
-
-For additional details, see:
-
-  
-
-📄 [`Data_Model.md`](Documentation/Data_Model.md)
-
-  
+📄 **[Data Model](https://chatgpt.com/c/Documentation/Data_Model.md)**
 
 ---
 
-  
+## 💡 Analytical Capabilities
 
-## 📐 DAX & Key Metrics
+The dashboard enables users to explore business performance through dynamic filtering and drill-downs.
 
-  
+### Regional Analysis
 
-Custom DAX measures and calculated columns were developed for the dashboard's core KPIs.
+Compare sales and profitability across regions and countries.
 
-  
+### Product Analysis
 
-### Core Metrics
+Analyze performance across product categories and sub-categories.
 
-  
+### Customer Analysis
 
-- **Total Sales**
+Explore customer purchasing behavior and segment-level performance.
 
-- **Total Profit**
+### Shipping Analysis
 
-- **Profit Margin**
+Examine order activity across different shipping modes.
 
-- **Order Volume**
+### Time-Series Analysis
 
-- **Average Sales per Order**
-
-- **Total Quantity**
-
-  
-
-Time-based calculations were also implemented to support trend and comparative analysis.
-
-  
-
-Detailed calculations are documented in:
-
-  
-
-📄 [`DAX_Measures.md`](Documentation/DAX_Measures.md)
-
-  
+Analyze sales and profit trends over time and identify seasonal patterns.
 
 ---
 
-  
+## 🖼️ Dataset
 
-## 📊 Dashboard Features
+The underlying transactional dataset is provided in Excel format.
 
-  
+<p align="center"> <img src="Screenshots/Dataset.png" alt="Dataset Preview"> </p>
 
-The dashboard provides an interactive analytical experience through:
+### Dataset Fields
 
-  
-
-- 📌 KPI Cards
-
-- 📊 Bar Charts
-
-- 📈 Line Charts
-
-- 🎛️ Interactive Slicers
-
-- 🔎 Dynamic Filtering
-
-- 🔽 Drill-down Analysis
-
-- 📅 Time-based Analysis
-
-  
-
-### Interactive Dimensions
-
-  
-
-Users can explore performance by:
-
-  
-
-- Region
-
-- Country
-
-- Segment
-
-- Category
-
-- Sub-Category
-
-- Shipping Mode
-
-  
-
-This allows users to move from high-level KPIs to more granular business analysis.
-
-  
+```text
+Order ID
+Date
+Customer
+Product Category
+Region
+Segment
+Shipping Mode
+Cost
+Sales
+Profit
+Quantity
+```
 
 ---
-
-  
-
-## 📈 Business Analysis
-
-  
-
-The dashboard supports analysis of several areas of business performance.
-
-  
-
-### 🌍 Regional Performance
-
-  
-
-Analyze differences in sales and profitability across geographic regions and countries.
-
-  
-
-### 📦 Product Performance
-
-  
-
-Evaluate product categories and sub-categories based on sales and profitability.
-
-  
-
-### 👥 Customer & Segment Analysis
-
-  
-
-Explore purchasing patterns and performance across customer segments.
-
-  
-
-### 🚚 Shipping Analysis
-
-  
-
-Analyze order activity and performance across different shipping modes.
-
-  
-
-### 📅 Time-Based Trends
-
-  
-
-Analyze changes in sales and profitability over time and identify seasonal patterns.
-
-  
-
----
-
-  
-
-## 💡 Key Analytical Areas
-
-  
-
-The dashboard enables users to investigate:
-
-  
-
-- Top-performing regions
-
-- Most profitable product categories
-
-- Customer purchasing patterns
-
-- Segment-level performance
-
-- Seasonal sales trends
-
-- Shipping efficiency patterns
-
-- Changes in key business KPIs
-
-  
-
-> **Note:** These are analytical capabilities provided by the dashboard rather than fixed conclusions from the dataset. Results change dynamically based on the selected filters.
-
-  
-
----
-
-  
 
 ## 🛠️ Technology Stack
 
-  
-
-| Technology | Purpose |
-
+|Technology|Role|
 |---|---|
-
-| **Microsoft Power BI** | Dashboard development & visualization |
-
-| **Power Query** | Data cleaning & transformation |
-
-| **DAX** | KPI calculations & analytical measures |
-
-| **Microsoft Excel** | Data source |
-
-| **Data Modeling** | Analytical structure & relationships |
-
-  
+|**Microsoft Power BI**|Dashboard & visualization|
+|**Power Query**|Data preparation & ETL|
+|**DAX**|Measures & KPI calculations|
+|**Microsoft Excel**|Source dataset|
+|**Data Modeling**|Analytical data structure|
 
 ---
-
-  
 
 ## 📁 Repository Structure
 
-  
-
 ```text
-
 power-bi-sales-order-analytics/
-
 │
-
 ├── README.md
-
 │
-
 ├── PowerBI/
-
-│   └── Sales_Order_Analytics.pbix
-
+│   └── Sales_Order_Analytics.pbix
 │
-
 ├── Dataset/
-
-│   └── Power_BI_Dataset.xlsx
-
+│   └── Power_BI_Dataset.xlsx
 │
-
 ├── Screenshots/
-
-│   ├── Dashboard.png
-
-│   └── Dataset.png
-
+│   ├── Dashboard.png
+│   └── Dataset.png
 │
-
 └── Documentation/
-
-    ├── DAX_Measures.md
-
-    ├── Data_Model.md
-
-    └── Project_Documentation.md
-
+    ├── DAX_Measures.md
+    ├── Data_Model.md
+    └── Project_Documentation.md
 ```
 
-  
-
 ---
-
-  
 
 ## 📚 Documentation
 
-  
-
-| Document | Description |
-
+|Resource|Description|
 |---|---|
-
-| [`Project_Documentation.md`](Documentation/Project_Documentation.md) | Complete project methodology and workflow |
-
-| [`DAX_Measures.md`](Documentation/DAX_Measures.md) | DAX measures and KPI calculations |
-
-| [`Data_Model.md`](Documentation/Data_Model.md) | Data model and analytical structure |
-
-  
+|**[Project Documentation](https://chatgpt.com/c/Documentation/Project_Documentation.md)**|Complete project methodology and workflow|
+|**[DAX Measures](https://chatgpt.com/c/Documentation/DAX_Measures.md)**|DAX calculations and KPI definitions|
+|**[Data Model](https://chatgpt.com/c/Documentation/Data_Model.md)**|Data structure and analytical model|
 
 ---
-
-  
 
 ## 🧠 Skills Demonstrated
 
-  
+**Business Intelligence**
 
-This project demonstrates practical skills in:
+**Data Analytics**
 
-  
+**Data Visualization**
 
-- Business Intelligence
+**Microsoft Power BI**
 
-- Microsoft Power BI
+**Power Query / ETL**
 
-- Power Query
+**DAX**
 
-- DAX
+**Data Modeling**
 
-- Data Cleaning
+**KPI Development**
 
-- Data Transformation
+**Interactive Dashboard Development**
 
-- Data Modeling
+**Sales & Order Analytics**
 
-- Data Visualization
+**Business Data Analysis**
 
-- KPI Development
-
-- Interactive Dashboard Development
-
-- Sales Analytics
-
-- Order Analytics
-
-- Business Data Analysis
-
-- Data Storytelling
-
-  
+**Data Storytelling**
 
 ---
-
-  
 
 ## 🚀 Project Outcome
 
-  
+This project demonstrates the ability to take a raw transactional dataset and develop a complete Business Intelligence solution using Microsoft Power BI.
 
-This project demonstrates the complete process of converting raw transactional data into an interactive Business Intelligence solution.
-
-  
-
-From **data ingestion and transformation** to **data modeling, DAX calculations, visualization, and analytical exploration**, the dashboard provides a structured way to understand sales and order performance.
-
-  
+The final solution combines **data preparation, analytical modeling, DAX-based metrics, interactive visualization, and business analysis** into a single reporting environment.
 
 ---
-
-  
 
 ## 📌 Project Status
 
-  
-
 **Completed**
-
-  
 
 The repository contains the Power BI dashboard, source dataset, dashboard screenshots, and supporting technical documentation.
 
-  
-
 ---
 
-  
+## ⭐ If You Find This Project Useful
 
-## ⭐ Support
-
-  
-
-If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
-
-  
+If this project helped you or you found it interesting, consider giving the repository a ⭐.
 
 ---
-
-  
 
 ## 📄 License
 
-  
-
-This project is intended for educational and portfolio purposes.
+This project is intended for **educational and portfolio purposes**.
