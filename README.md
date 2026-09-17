@@ -72,7 +72,7 @@ The dashboard incorporates custom DAX measures for core business KPIs.
 
 Detailed DAX calculations are available in:
 
-📄 **[DAX Measures](https://chatgpt.com/c/Documentation/DAX_Measures.md)**
+📄 **[DAX Measures](Documentation/DAX_Measures.md)**
 
 ---
 
@@ -161,30 +161,25 @@ The analytical model supports multiple dimensions for interactive reporting.
 
 For detailed model documentation:
 
-📄 **[Data Model](https://chatgpt.com/c/Documentation/Data_Model.md)**
+📄 **[Data Model](Documentation/Data_Model.md)**
 
 ---
 
 ## 💡 Analytical Capabilities
 
 The dashboard enables users to explore business performance through dynamic filtering and drill-downs.
-
 ### Regional Analysis
 
 Compare sales and profitability across regions and countries.
-
 ### Product Analysis
 
 Analyze performance across product categories and sub-categories.
-
 ### Customer Analysis
 
 Explore customer purchasing behavior and segment-level performance.
-
 ### Shipping Analysis
 
 Examine order activity across different shipping modes.
-
 ### Time-Series Analysis
 
 Analyze sales and profit trends over time and identify seasonal patterns.
@@ -256,36 +251,25 @@ power-bi-sales-order-analytics/
 
 |Resource|Description|
 |---|---|
-|**[Project Documentation](https://chatgpt.com/c/Documentation/Project_Documentation.md)**|Complete project methodology and workflow|
-|**[DAX Measures](https://chatgpt.com/c/Documentation/DAX_Measures.md)**|DAX calculations and KPI definitions|
-|**[Data Model](https://chatgpt.com/c/Documentation/Data_Model.md)**|Data structure and analytical model|
+|**[Project Documentation](Documentation/Project_Documentation.md)**|Complete project methodology and workflow|
+|**[DAX Measures](Documentation/DAX_Measures.md)**|DAX calculations and KPI definitions|
+|**[Data Model](Documentation/Data_Model.md)**|Data structure and analytical model|
 
 ---
 
 ## 🧠 Skills Demonstrated
 
 **Business Intelligence**
-
 **Data Analytics**
-
 **Data Visualization**
-
 **Microsoft Power BI**
-
 **Power Query / ETL**
-
 **DAX**
-
 **Data Modeling**
-
 **KPI Development**
-
 **Interactive Dashboard Development**
-
 **Sales & Order Analytics**
-
 **Business Data Analysis**
-
 **Data Storytelling**
 
 ---
@@ -295,14 +279,6 @@ power-bi-sales-order-analytics/
 This project demonstrates the ability to take a raw transactional dataset and develop a complete Business Intelligence solution using Microsoft Power BI.
 
 The final solution combines **data preparation, analytical modeling, DAX-based metrics, interactive visualization, and business analysis** into a single reporting environment.
-
----
-
-## 📌 Project Status
-
-**Completed**
-
-The repository contains the Power BI dashboard, source dataset, dashboard screenshots, and supporting technical documentation.
 
 ---
 
