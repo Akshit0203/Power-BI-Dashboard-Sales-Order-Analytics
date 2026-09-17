@@ -4,8 +4,6 @@
 
 <p align="center"> <strong>Interactive Business Intelligence Dashboard for Sales, Profitability & Order Performance</strong> </p>
 
-<p align="center"> <img src="[https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black](https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)" alt="Power BI"> <img src="[https://img.shields.io/badge/DAX-512BD4?style=for-the-badge&logoColor=white](https://img.shields.io/badge/DAX-512BD4?style=for-the-badge&logoColor=white)" alt="DAX"> <img src="[https://img.shields.io/badge/Power%20Query-117865?style=for-the-badge&logoColor=white](https://img.shields.io/badge/Power%20Query-117865?style=for-the-badge&logoColor=white)" alt="Power Query"> <img src="[https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)" alt="Excel"> </p>
-
 ---
 
 ## 📌 Project Overview
